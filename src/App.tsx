@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
-import { useAppContext } from './context/AppContext';
+
 import { Link, useNavigate } from 'react-router-dom';
+import { useAppContext } from './utils';
 
 function App() {
   const { name, setName } = useAppContext();

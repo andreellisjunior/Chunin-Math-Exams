@@ -1,8 +1,8 @@
 import { Link, useParams } from 'react-router-dom';
-import { useAppContext } from './context/AppContext';
 import { useEffect, useState } from 'react';
 import Victory from './assets/Vector.png';
 import Cancel from './assets/Cancel.png';
+import { useAppContext } from './utils';
 
 const Board = () => {
   const { name, setName, streak, setStreak } = useAppContext();
@@ -51,6 +51,7 @@ const Board = () => {
   useEffect(() => {
     gameLogic();
     setStreak(streakRecord);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const arithmatic = (a: number, b: number, operator: string) => {

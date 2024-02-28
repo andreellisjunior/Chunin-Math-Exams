@@ -1,11 +1,10 @@
 import React, {
   Dispatch,
   SetStateAction,
-  createContext,
-  useContext,
   useEffect,
   useState,
 } from 'react';
+import { AppContext } from '../utils';
 
 type AppProvider = {
   name: string;
@@ -13,10 +12,7 @@ type AppProvider = {
   streak: Record<string, number>;
   setStreak: Dispatch<SetStateAction<Record<string, number>>>;
 };
-// @ts-expect-error ignore default param
-const AppContext = createContext<AppProvider>();
 
-export const useAppContext = () => useContext(AppContext);
 
 const AppProvider = ({ children }: { children: React.ReactNode }) => {
   const [name, setName] = useState('');
