@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Rubik:wght@300;400;500;600;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: url('assets/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  color: white;
+  border-color: rgb(2, 165, 2)
+}
