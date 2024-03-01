@@ -37,8 +37,8 @@ const Board = () => {
         break;
       case `2-3`:
         setMath({
-          left: Math.floor(Math.random() * 100),
-          right: Math.floor(Math.random() * 100),
+          left: Math.floor(Math.random() * 50),
+          right: Math.floor(Math.random() * 50),
           operator: [`+`, `-`],
         });
         break;
@@ -51,7 +51,7 @@ const Board = () => {
   useEffect(() => {
     gameLogic();
     setStreak(streakRecord);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const arithmatic = (a: number, b: number, operator: string) => {

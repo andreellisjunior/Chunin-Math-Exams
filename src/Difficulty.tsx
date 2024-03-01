@@ -8,7 +8,7 @@ const Difficulty = () => {
   const difficultyLevels = [
     { difficulty: 'K - 1', bgColor: 'bg-green-600', link: 'k-1', status: 1 },
     { difficulty: '1 - 2', bgColor: 'bg-lime-500', link: '1-2', status: 1 },
-    { difficulty: '2 - 3', bgColor: 'bg-yellow-500', link: '2-3', status: 0 },
+    { difficulty: '2 - 3', bgColor: 'bg-yellow-500', link: '2-3', status: 1 },
     { difficulty: '3 - 4', bgColor: 'bg-orange-500', link: '3-4', status: 0 },
     { difficulty: '5 - 6', bgColor: 'bg-orange-700', link: '5-6', status: 0 },
     { difficulty: 'HARD', bgColor: 'bg-red-800', link: 'hard' },
